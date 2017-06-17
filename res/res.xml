@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 0 -->
+<manifest package="com.example.androidtest" ><!-- 1 -->
+
+    <uses-sdk
+        minSdkVersion="19"
+        targetSdkVersion="21">kitkat4.4</uses-sdk><!-- 2 -->
+
+    <application
+        allowBackup="true"
+        icon="ic_launcher" ><!-- 2 -->
+        
+        <activity
+            name="MainActivity"
+            label="app_name" ><!-- 3 -->
+            
+            <intent-filter><!-- 4 -->
+                <action name="android.intent.action.MAIN" /><!-- 5 -->
+
+                <category name="android.intent.category.LAUNCHER" /><!-- 5 -->
+            </intent-filter><!-- 4 -->
+            
+        </activity><!-- 3 -->
+        
+        <activity
+            name="DefaultActivity"
+            label="def_name" ><!-- 3 -->
+            
+            <intent-filter><!-- 4 -->
+                <category name="android.intent.category.LAUNCHER" /><!-- 5 -->
+            </intent-filter><!-- 4 -->
+            
+            <intent-filter><!-- 4 -->
+                <category name="android.intent.category.HOME" /><!-- 5 -->
+            </intent-filter><!-- 4 -->
+            
+        </activity><!-- 3 -->
+        
+    </application><!-- 2 -->
+    
+    <application
+        allowBackup="false"
+        icon="ic_launcher"><!-- 2 -->
+        
+        <activity
+            name="TestActivity"
+            label="test_name" ><!-- 3 -->
+            
+            <intent-filter><!-- 4 -->
+                <category name="android.intent.category.LAUNCHER" /><!-- 5 -->
+            </intent-filter><!-- 4 -->
+            
+        </activity><!-- 3 -->
+        
+    </application><!-- 2 -->
+
+</manifest><!-- 1 -->
+<!-- 0 -->
